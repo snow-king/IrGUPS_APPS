@@ -66,7 +66,7 @@
         </div>
         <button
           type="button"
-          @keyup.enter="login"
+          v-on:keydown.enter="login"
           class="w-full bg-emerald-600 text-white hover:bg-emerald-700 focus:ring-4 focus:outline-none focus:ring-emerald-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           @click="login"
         >
@@ -84,6 +84,7 @@
       </form>
     </div>
   </div>
+  <Alert v-if="error.flag" type="danger" class="mt-10" closable @click="error.flag=false">{{error.text}}</Alert>
 </template>
 
 <script setup lang="ts">
@@ -91,21 +92,33 @@ import {ref} from "vue";
 import {useRouter} from "vue-router";
 import {UserLogin} from "../../../_shared/DTO";
 import {useUserStore} from "../stores/useUserStore";
+import {Alert} from "flowbite-vue";
 
 const emit = defineEmits(["toggle"]);
 const user = ref<UserLogin>({
   email: "",
   password: "",
 });
+const error = ref({
+  flag: false,
+  text: ''
+})
 const userStore = useUserStore();
 const router = useRouter();
 const openRegister = () => {
   emit("toggle");
 };
 const login = async () => {
-  await userStore.signing(user.value);
+  const response = await userStore.signing(user.value);
   if (userStore.token) {
     router.push({ name: "ParentPage" });
+  }
+  else {
+    if (typeof response === "string") {
+      error.value.text = response
+      error.value.flag = true
+    }
+
   }
 };
 </script>

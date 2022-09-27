@@ -1,6 +1,6 @@
-import {createApp, markRaw} from "vue";
+import { createApp, markRaw } from "vue";
 import "./style.css";
-import {createPinia} from "pinia";
+import { createPinia } from "pinia";
 import App from "./App.vue";
 import "flowbite";
 import router from "./router";

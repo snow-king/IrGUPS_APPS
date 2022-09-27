@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts" setup>
-import {watch} from "vue";
+import { watch } from "vue";
 import Cross from "../../../_shared/components/svg/CrossSVG.vue";
 
 const props = defineProps({

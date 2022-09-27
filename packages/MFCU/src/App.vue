@@ -11,7 +11,8 @@
 </template>
 <script setup lang="ts">
 import Footer from "@shared/components/PageFooter.vue";
-import TheHeader from "./components/TheHeader.vue";</script>
+import TheHeader from "./components/TheHeader.vue";
+</script>
 <style>
 .fade-enter-from,
 .fade-leave-to {

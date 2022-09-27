@@ -78,10 +78,10 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-import {useRouter} from "vue-router";
-import {UserLogin} from "../DTO";
-import {useUserStore} from "../stores/useUserStore";
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+import { UserLogin } from "../DTO";
+import { useUserStore } from "../stores/useUserStore";
 
 const emit = defineEmits(["toggle"]);
 const user = ref<UserLogin>({

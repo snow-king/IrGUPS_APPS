@@ -12,7 +12,6 @@
 
 <script setup lang="ts">
 import {ref, watch} from "vue";
-
 const emit = defineEmits(["update:enterElement"]);
 
 const props = defineProps({

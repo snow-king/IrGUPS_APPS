@@ -55,10 +55,10 @@
 </template>
 
 <script setup lang="ts">
-import {Alert, Spinner} from "flowbite-vue";
-import {ref, watch} from "vue";
-import {getAccess} from "../services";
-import {useUserStore} from "../stores/useUserStore";
+import { Alert, Spinner } from "flowbite-vue";
+import { ref, watch } from "vue";
+import { getAccess } from "../services";
+import { useUserStore } from "../stores/useUserStore";
 
 const token = ref("");
 const searchResult = ref(false);

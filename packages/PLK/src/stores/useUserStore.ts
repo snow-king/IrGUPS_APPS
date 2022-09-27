@@ -22,15 +22,21 @@ export const useUserStore = defineStore({
       return { token: state.token, id: state.id };
     },
     timeToDie(state) {
-      return state.date - new Date().getSeconds() > 18000;
+      return new Date().getTime()/1000 - state.date > 18000;
     },
   },
   actions: {
     async signing(dataUser: UserLogin) {
-      let response = await authenticate(dataUser);
-      this.$state.token = response.token;
-      this.$state.id = response.id;
-      this.$state.date = new Date().getSeconds();
+      const response = await authenticate(dataUser);
+      if (response.token){
+        this.$state.token = response.token;
+        this.$state.id = response.id;
+        this.$state.date = new Date().getTime()/1000;
+        return this.token
+      }
+      else {
+        return response
+      }
     },
     exitSystem() {
       this.$state.token = "";

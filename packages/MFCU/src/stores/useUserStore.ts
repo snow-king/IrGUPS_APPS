@@ -1,6 +1,6 @@
-import {defineStore} from "pinia";
-import {UserLogin} from "../../../_shared/DTO";
-import {authenticate} from "../services";
+import { defineStore } from "pinia";
+import { UserLogin } from "../../../_shared/DTO";
+import { authenticate } from "../services";
 import router from "../router";
 
 export const useUserStore = defineStore({

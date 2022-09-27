@@ -27,9 +27,9 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+import { ref } from "vue";
 import LoginForm from "../components/LoginForm.vue";
-import {Alert} from "flowbite-vue";
+import { Alert } from "flowbite-vue";
 
 const toggleRegister = ref(false);
 const confirm = ref<boolean>(false);
