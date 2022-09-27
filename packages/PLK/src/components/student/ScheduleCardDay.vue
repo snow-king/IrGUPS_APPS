@@ -4,7 +4,7 @@
       class="max-w-sm bg-white rounded-t-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 pb-4 m-3 border-dashed border-b-8 border-gray-300"
     >
       <div
-        class="bg-primary-600 text-white font-bold flex justify-center rounded-t-md py-1 shadow-lg px-40"
+        class="bg-primary-600 text-white font-semibold flex justify-center rounded-t-md py-1 shadow-lg px-40"
       >
         <SkeletonElement check-element="day">
           {{ day?.day }}
@@ -17,20 +17,20 @@
             v-if="checkWeek(subjects.lec_week) && checkGroup(subjects.subgroup)"
           >
             <div class="border-b-2 grid-cols-2 text-sm px-4">
-              <div class="flex justify-center font-semibold">
-                <div class="font-semibold text-center">
+              <div class="flex justify-center font-medium">
+                <div class="font-medium text-center">
                   {{ subjects.exam.exam }}
                 </div>
               </div>
               <hr class="border-gray-500 mx-8" />
-              <div class="font-medium py-1 text-center">
+              <div class="font-normal py-1 text-center">
                 {{ subjects.lec_type.name }}
               </div>
               <div class="flex justify-between">
-                <div class="font-semibold py-1">
+                <div class="font-medium py-1">
                   {{ time[subjects.lec_id] }}
                 </div>
-                <div class="font-semibold py-1">
+                <div class="font-medium py-1">
                   {{ subjects.auditorium.name }}
                 </div>
               </div>

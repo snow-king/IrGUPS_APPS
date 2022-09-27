@@ -4,7 +4,7 @@
   >
     <th
       scope="row"
-      class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+      class="py-4 px-6 font-normal text-gray-900 whitespace-nowrap dark:text-white"
     >
       {{ dept.num }}
     </th>

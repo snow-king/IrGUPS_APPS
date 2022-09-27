@@ -92,7 +92,7 @@
       - Не более 15 МБ;
       <br />
       - Формат: JPG, PDF </DocDownloadField
-    >>
+    >
     <hr class="my-4" />
 
     <div class="flex-col">
@@ -129,16 +129,16 @@
 </template>
 
 <script setup lang="ts">
-import DoubleGridWrapper from "../../../../_shared/components/DoubleGridWrapper.vue";
-import LineInput from "../../../../_shared/components/LineInput.vue";
+import DoubleGridWrapper from "../DoubleGridWrapper.vue";
+import LineInput from "../LineInput.vue";
 import {ParentDocument, Person} from "../../../../_shared/DTO";
 import {computed, PropType, ref, watch} from "vue";
 import {countries, updatePerson, uploadFile} from "../../services";
 import {useUserStore} from "../../stores/useUserStore";
-import DocDownloadField from "../../../../_shared/components/DocDownloadField.vue";
+import DocDownloadField from "../DocDownloadField.vue";
 import DatepickerAdapter from "../DatepickerAdapter.vue";
-import ContractCheckBox from "../../../../_shared/components/ContractCheckBox.vue";
-import SexRadioBtn from "../../../../_shared/components/SexRadioBtn.vue";
+import ContractCheckBox from "../ContractCheckBox.vue";
+import SexRadioBtn from "../SexRadioBtn.vue";
 import {Spinner} from "flowbite-vue";
 
 const file = ref<File | null>();

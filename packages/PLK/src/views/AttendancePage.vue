@@ -3,12 +3,12 @@
     <div class="flex px-10">
       <ReturnBtn />
       <div
-        class="flex text-xl font-semibold break-all pl-4 p-1 dark:text-white"
+        class="flex text-xl font-medium break-all pl-4 p-1 dark:text-white"
       >
         Данные пропускной системы
       </div>
     </div>
-    <Alert type="info" closable class="mx-10 my-5 font-medium"
+    <Alert type="info" closable class="mx-10 my-5 font-normal"
       >Показываются посещаемость в текущем месяце c 1 числа.</Alert
     >
   </div>

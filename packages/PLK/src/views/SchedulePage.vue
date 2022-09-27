@@ -5,7 +5,7 @@
     <div class="flex md:flex-row flex-col md:px-10 px-3.5">
       <ReturnBtn />
       <div
-        class="flex md:flex-row flex-col text-xl font-semibold whitespace-nowrap md:pl-4 p-1 dark:text-white"
+        class="flex md:flex-row flex-col text-xl font-medium whitespace-nowrap md:pl-4 p-1 dark:text-white"
       >
         <skeleton-element
           :check-element="subjects.length !== 0"
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div
-      class="flex md:flex-row px-10 py-2 text-xl font-semibold justify-center"
+      class="flex md:flex-row px-10 py-2 text-xl font-medium justify-center"
     >
       <skeleton-element
         :check-element="subjects.length !== 0"
@@ -60,10 +60,10 @@
       </skeleton-element>
     </div>
 
-    <div class="flex items-center justify-center font-bold">
+    <div class="flex items-center justify-center font-medium">
       <div class="mx-1">
         <button
-          class="link link-underline link-underline-green text-black px-2"
+          class="link link-underline link-underline-green  px-2"
           @click="parity = true"
           :class="[parity ? 'link-underline-active' : '']"
         >

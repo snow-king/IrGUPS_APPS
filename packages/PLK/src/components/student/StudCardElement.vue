@@ -2,10 +2,10 @@
   <div
     class="flex justify-between px-2 py-0.5 transition duration-150 border-b border-transparent hover:border-primary-400 cursor-default"
   >
-    <div class="font-semibold">
+    <div class="font-medium">
       {{ theme }}
     </div>
-    <div class="text-right">
+    <div class="text-right font-normal">
       <SkeletonElement :checkElement="value" :width="'h-4'" :height="'w-60'">
         {{ value }}
       </SkeletonElement>

@@ -4,7 +4,7 @@
       <SearchElement @addChild="addFlag = !addFlag" />
       <div class="flex-col md: px-10">
         <div
-          class="flex text-xl font-semibold whitespace-nowrap py-5 dark:text-white"
+          class="flex text-xl font-medium whitespace-nowrap py-5 dark:text-white"
         >
           Текущие обучающиеся:
         </div>

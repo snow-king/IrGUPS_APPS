@@ -2,7 +2,7 @@
   <NavBar v-if="$route.name !== 'AuthPage' && $route.name !== 'NotFound'" />
   <router-view v-slot="{ Component, route }">
     <transition name="fade" mode="out-in">
-      <div :key="route.name ?? ''">
+      <div :key="route.name ?? ''" class="text-gray-900">
         <component :is="Component"></component>
       </div>
     </transition>

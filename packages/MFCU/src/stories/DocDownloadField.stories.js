@@ -1,4 +1,4 @@
-import DocDownloadField from "../../../_shared/components/DocDownloadField.vue";
+import DocDownloadField from "plk-client/src/components/DocDownloadField.vue";
 
 export default {
   title: "UtilityComponent/DocDownloadFiled",

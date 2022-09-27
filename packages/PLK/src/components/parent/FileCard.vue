@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import DocElement from "../../../../_shared/components/DocElement.vue";
+import DocElement from "../DocElement.vue";
 import {ref} from "vue";
 import {delDocuments, getDocuments} from "../../services";
 import {useUserStore} from "../../stores/useUserStore";

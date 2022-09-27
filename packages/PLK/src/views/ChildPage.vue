@@ -10,12 +10,12 @@
         class="bg-white xl:mx-60 mt-10 rounded-md shadow-lg p-4"
         v-if="useStudentStore().PersonData.name1"
       >
-        <div class="flex justify-center text-xl font-semibold">
+        <div class="flex justify-center text-xl font-medium">
           <p>Данные о обучающемся</p>
         </div>
         <hr class="mx-4 text-black" />
         <div
-          class="grid grid-cols-2 gap-4 font-semibold text-lg justify-items-center"
+          class="grid grid-cols-2 gap-4 font-medium text-lg justify-items-center"
         >
           <div class="flex-col justify-start p-2">
             <div

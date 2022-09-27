@@ -5,7 +5,7 @@
     </div>
     <div class="flex-col px-2 w-full">
       <!-- ///TODO CardInfo compoent -->
-      <div class="flex text-lg font-semibold px-2 pb-1">
+      <div class="flex text-lg font-medium px-2 pb-1">
         <SkeletonElement
           :checkElement="student?.name1"
           :width="'h-7'"

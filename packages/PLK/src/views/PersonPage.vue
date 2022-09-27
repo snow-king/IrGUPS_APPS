@@ -20,7 +20,7 @@
           </div>
           <hr class="p-2" />
           <div class="flex justify-between font-medium px-2">
-            <div class="flex justify-between w-full pr-5">
+            <div class="flex justify-between w-full pr-5 р-2">
               <div class="">Серия:</div>
               <div class="text-primary-800 text-right">
                 <SkeletonElement

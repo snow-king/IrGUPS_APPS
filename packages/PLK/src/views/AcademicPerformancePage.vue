@@ -6,7 +6,7 @@
     <div class="flex md:px-10 px-3.5">
       <ReturnBtn />
       <div
-        class="flex text-xl font-semibold break-all pl-4 p-1 dark:text-white"
+        class="flex text-xl font-medium break-all pl-4 p-1 dark:text-white"
       >
         Успеваемость обучаещего
       </div>

@@ -80,7 +80,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
-import { UserLogin } from "../DTO";
+import { UserLogin } from "../../../_shared/DTO";
 import { useUserStore } from "../stores/useUserStore";
 
 const emit = defineEmits(["toggle"]);

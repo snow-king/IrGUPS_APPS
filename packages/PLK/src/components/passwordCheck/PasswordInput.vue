@@ -83,7 +83,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from "vue";
 import PasswordScore from "./PasswordScore.vue";
-import Eye from "../../../PLK/src/components/svg/EyeSVG.vue";
+import Eye from "../svg/EyeSVG.vue";
 const show = ref<boolean>(false);
 const props = defineProps({
   password: {

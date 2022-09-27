@@ -5,7 +5,7 @@
     >
       <th
         scope="row"
-        class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+        class="py-4 px-6 font-normal text-gray-900 whitespace-nowrap dark:text-white"
       >
         1
       </th>
@@ -20,13 +20,13 @@
       </td>
       <td class="py-4 px-6 text-right">
         <button
-          class="bg-yellow-300 rounded-l-md text-white p-2 font-semibold hover:bg-yellow-400 shadow-md"
+          class="bg-yellow-300 rounded-l-md text-white p-2 font-medium hover:bg-yellow-400 shadow-md"
           disabled
         >
           Просмотр Приказа
         </button>
         <button
-          class="bg-yellow-300 rounded-r-md text-white p-2 font-semibold hover:bg-yellow-400 shadow-md"
+          class="bg-yellow-300 rounded-r-md text-white p-2 font-medium hover:bg-yellow-400 shadow-md"
           disabled
         >
           Выписка из приказа

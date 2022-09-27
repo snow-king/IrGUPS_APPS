@@ -28,7 +28,7 @@
 </template>
 
 <script setup lang="ts">
-import Cross from "../../PLK/src/components/svg/CrossSVG.vue";
+import Cross from "./svg/CrossSVG.vue";
 
 const emits = defineEmits(["delete"]);
 const props = defineProps({

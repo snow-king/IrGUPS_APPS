@@ -7,7 +7,7 @@
       class="w-full text-sm text-left text-gray-700 dark:text-gray-400 border-collapse overflow-hidden"
     >
       <thead
-        class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400"
+        class="text-xs text-gray-600 uppercase font-normal bg-gray-200 dark:bg-gray-700 dark:text-gray-400"
       >
         <tr>
           <th scope="col" class="py-3 px-6" v-if="enumerable">№</th>

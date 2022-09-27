@@ -6,7 +6,7 @@
       <router-link :to="{ name: 'ParentPage' }" class="flex items-center">
         <alone-logo class="h-6 sm:h-10 mr-3 hidden md:block" />
         <span
-          class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          class="self-center text-xl font-medium whitespace-nowrap dark:text-white text-gray-900"
           >Личный кабинет родителя</span
         >
       </router-link>

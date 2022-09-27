@@ -1,4 +1,4 @@
-import PasswordInput from "../../../_shared/components/passwordCheck/PasswordInput.vue";
+import PasswordInput from "../../../PLK/src/components/passwordCheck/PasswordInput.vue";
 
 export default {
   title: "UtilityComponent/PasswordCheck",

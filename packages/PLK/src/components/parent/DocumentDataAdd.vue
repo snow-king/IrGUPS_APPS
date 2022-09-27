@@ -77,12 +77,12 @@
 </template>
 
 <script setup lang="ts">
-import DoubleGridWrapper from "../../../../_shared/components/DoubleGridWrapper.vue";
-import LineInput from "../../../../_shared/components/LineInput.vue";
+import DoubleGridWrapper from "../DoubleGridWrapper.vue";
+import LineInput from "../LineInput.vue";
 import {ref} from "vue";
 import {ParentDocument} from "../../../../_shared/DTO";
 import DatepickerAdapter from "../DatepickerAdapter.vue";
-import DocDownloadField from "../../../../_shared/components/DocDownloadField.vue";
+import DocDownloadField from "../DocDownloadField.vue";
 import {useUserStore} from "../../stores/useUserStore";
 import {getPersonId, uploadFile} from "../../services";
 import {Spinner} from "flowbite-vue";

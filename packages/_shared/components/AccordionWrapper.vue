@@ -10,7 +10,7 @@
       class="flex-col bg-white md:mx-20 mx-2 mt-4 rounded-md shadow-lg transition duration-500 ease-in-out"
     >
       <div class="flex justify-between cursor-pointer" @click="open">
-        <div class="font-semibold py-2 pl-4">
+        <div class="font-medium py-2 pl-4">
           {{ text }}
         </div>
         <div class="py-2">

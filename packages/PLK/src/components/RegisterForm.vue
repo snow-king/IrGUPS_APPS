@@ -101,7 +101,7 @@
 <script setup lang="ts">
 import {ref} from "vue";
 import {UserRegister} from "../../../_shared/DTO";
-import PasswordInput from "../../../_shared/components/passwordCheck/PasswordInput.vue";
+import PasswordInput from "./passwordCheck/PasswordInput.vue";
 import {register} from "../services";
 
 const user = ref<UserRegister>({
