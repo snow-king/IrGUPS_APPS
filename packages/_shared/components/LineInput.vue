@@ -27,4 +27,6 @@ const enterElement = computed({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

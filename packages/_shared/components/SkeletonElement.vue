@@ -1,17 +1,22 @@
 <template>
-  <div
-    class="bg-gray-200 rounded-md dark:bg-gray-700 animate-pulse"
-    v-show="!checkElement"
-    :class="[width, height]"
-  ></div>
-  <Transition name="fade" :duration="500">
-    <div v-if="checkElement">
-      <slot></slot>
-    </div>
-  </Transition>
+  <div>
+    <div
+        class="bg-gray-200 rounded-md dark:bg-gray-700 animate-pulse"
+        v-show="!checkElement"
+        :class="[width, height]"
+    ></div>
+    <Transition name="fade" :duration="500">
+      <div v-if="checkElement">
+        <div>
+          <slot></slot>
+        </div>
+      </div>
+    </Transition>
+  </div>
 </template>
 
 <script setup lang="ts">
+
 const props = defineProps(["width", "height", "checkElement"]);
 </script>
 
@@ -20,9 +25,12 @@ const props = defineProps(["width", "height", "checkElement"]);
 .fade-leave-active {
   animation: fade 0.7s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
+{
   animation: fade 0.7s reverse;
 }
+
 @keyframes fade {
   0% {
     opacity: 0;
