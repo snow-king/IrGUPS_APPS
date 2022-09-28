@@ -1,6 +1,6 @@
-import {ParentDocument, User} from "../../../_shared/DTO";
-import {getPersonId} from "./person";
-import {openApi} from "../../../_shared/services/instance";
+import { ParentDocument, User } from "../../../_shared/DTO";
+import { getPersonId } from "./person";
+import { openApi } from "../../../_shared/services/instance";
 
 export const uploadFile = async (
   user: User,
@@ -8,7 +8,7 @@ export const uploadFile = async (
   dataFile: ParentDocument
 ) => {
   openApi.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;
-  let content = {
+  const content = {
     file: file,
     ...dataFile,
   };

@@ -99,10 +99,10 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-import {UserRegister} from "../../../_shared/DTO";
+import { ref } from "vue";
+import { UserRegister } from "../../../_shared/DTO";
 import PasswordInput from "./passwordCheck/PasswordInput.vue";
-import {register} from "../services";
+import { register } from "../services";
 
 const user = ref<UserRegister>({
   firstName: "",

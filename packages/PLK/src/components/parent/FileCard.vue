@@ -35,11 +35,11 @@
 
 <script setup lang="ts">
 import DocElement from "../DocElement.vue";
-import {ref} from "vue";
-import {delDocuments, getDocuments} from "../../services";
-import {useUserStore} from "../../stores/useUserStore";
-import {ParentDocument} from "../../../../_shared/DTO";
-import {Spinner} from "flowbite-vue";
+import { ref } from "vue";
+import { delDocuments, getDocuments } from "../../services";
+import { useUserStore } from "../../stores/useUserStore";
+import { ParentDocument } from "../../../../_shared/DTO";
+import { Spinner } from "flowbite-vue";
 import Modal from "../ModalWrapper.vue";
 import DocumentDataAdd from "./DocumentDataAdd.vue";
 

@@ -1,4 +1,4 @@
-import PageFooter from "../../../_shared/components/PageFooter.vue";
+import PageFooter from "../components/TheFooter.vue";
 
 export default {
   title: "UtilityComponent/Footer",

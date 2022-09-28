@@ -14,13 +14,13 @@
 </template>
 
 <script setup lang="ts">
-import {ref, watch} from "vue";
+import { ref, watch } from "vue";
 import router from "../../router";
-import {searchFamily} from "../../services";
-import {useUserStore} from "../../stores/useUserStore";
+import { searchFamily } from "../../services";
+import { useUserStore } from "../../stores/useUserStore";
 import TableChildElement from "./TableChildElement.vue";
-import VoidTableElement from "../../../../_shared/components/VoidTableElement.vue";
-import TableWrapper from "../../../../_shared/components/TableWrapper.vue";
+import VoidTableElement from "../VoidTableElement.vue";
+import TableWrapper from "../TableWrapper.vue";
 
 const emits = defineEmits(["tableUpdated"]);
 const props = defineProps({

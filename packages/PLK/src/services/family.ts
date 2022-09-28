@@ -1,6 +1,6 @@
-import {User} from "../../../_shared/DTO";
-import {getPersonId} from "./person";
-import {openApi} from "../../../_shared/services/instance";
+import { User } from "../../../_shared/DTO";
+import { getPersonId } from "./person";
+import { openApi } from "../../../_shared/services/instance";
 
 export const searchFamily = async (user: User) => {
   openApi.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;

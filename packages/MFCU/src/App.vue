@@ -7,11 +7,12 @@
       </div>
     </transition>
   </router-view>
-  <Footer />
+  <TheFooter/>
 </template>
 <script setup lang="ts">
-import Footer from "@shared/components/PageFooter.vue";
+
 import TheHeader from "./components/TheHeader.vue";
+import TheFooter from "../../_shared/components/TheFooter.vue";
 </script>
 <style>
 .fade-enter-from,

@@ -5,6 +5,7 @@
     placeholder=" "
     v-model="enterElement"
     required
+    v-maska="inputMask"
   />
   <label
     for="floating_first_name"
@@ -17,6 +18,7 @@
 import { computed } from "vue";
 const emit = defineEmits(["update:enterElement"]);
 const props = defineProps({
+  inputMask: String,
   text: String,
   enterElement: String,
   require: { type: Boolean, default: false },
@@ -27,6 +29,4 @@ const enterElement = computed({
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

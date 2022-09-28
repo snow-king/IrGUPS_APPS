@@ -1,5 +1,5 @@
-import {Country} from "../../../_shared/DTO";
-import {openApi} from "../../../_shared/services/instance";
+import { Country } from "../../../_shared/DTO";
+import { openApi } from "../../../_shared/services/instance";
 
 export const countries = async () => {
   return await openApi

@@ -1,4 +1,4 @@
-export  interface Document {
+export interface DocumentDto {
     docType : string,
     personId : number,
     name: string,

@@ -1,6 +1,6 @@
-import {openApi} from "../../../_shared/services/instance";
+import { openApi } from "../../../_shared/services/instance";
 
-export const getSchedule = async (groupId: Number) => {
+export const getSchedule = async (groupId: number) => {
   return await openApi
     .get(`/api/studGroup/${groupId}/schedule`)
     .then((response) => response.data)

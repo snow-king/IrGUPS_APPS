@@ -18,8 +18,8 @@
 </template>
 
 <script setup lang="ts">
-import {PropType} from "vue";
-import {Book} from "../../../../_shared/DTO";
+import { PropType } from "vue";
+import { Book } from "../../../../_shared/DTO";
 
 const props = defineProps({
   index: { type: Number, required: true },

@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import {useStudentStore} from "../../stores/useStudentStore";
+import { useStudentStore } from "../../stores/useStudentStore";
 
 const id = useStudentStore().id;
 </script>

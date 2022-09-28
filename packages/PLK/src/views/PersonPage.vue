@@ -151,13 +151,13 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-import {useUserStore} from "../stores/useUserStore";
-import {Country, Person} from "../../../_shared/DTO";
-import {getCountry, getPerson} from "../services";
-import {useRouter} from "vue-router";
+import { ref } from "vue";
+import { useUserStore } from "../stores/useUserStore";
+import { Country, Person } from "../../../_shared/DTO";
+import { getCountry, getPerson } from "../services";
+import { useRouter } from "vue-router";
 
-import SkeletonElement from "../../../_shared/components/SkeletonElement.vue";
+import SkeletonElement from "../components/SkeletonElement.vue";
 import PasswordDataAdd from "../components/parent/PasswordDataAdd.vue";
 import Modal from "../components/ModalWrapper.vue";
 import FileCard from "../components/parent/FileCard.vue";

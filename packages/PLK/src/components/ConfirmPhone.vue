@@ -49,8 +49,8 @@
 </template>
 
 <script setup lang="ts">
-import {confirm} from "../services";
-import {ref} from "vue";
+import { confirm } from "../services";
+import { ref } from "vue";
 
 const code = ref<string>("");
 const props = defineProps({

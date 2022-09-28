@@ -23,8 +23,8 @@
 </template>
 
 <script setup lang="ts">
-import {PropType} from "vue";
-import {Uchplan} from "../../../../_shared/DTO";
+import { PropType } from "vue";
+import { Uchplan } from "../../../../_shared/DTO";
 
 const props = defineProps({
   uchplan: {

@@ -1,5 +1,5 @@
-import {Mark, User} from "../../../_shared/DTO";
-import {openApi} from "../../../_shared/services/instance";
+import { Mark, User } from "../../../_shared/DTO";
+import { openApi } from "../../../_shared/services/instance";
 
 export const getMarks = async (
   user: User,

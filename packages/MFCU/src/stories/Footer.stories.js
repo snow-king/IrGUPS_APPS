@@ -1,4 +1,4 @@
-import PageFooter from "../../../_shared/components/PageFooter.vue";
+import PageFooter from "plk-client/src/components/PageFooter.vue";
 
 export default {
   title: "UtilityComponent/Footer",

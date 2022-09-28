@@ -1,6 +1,6 @@
-import {defineStore} from "pinia";
-import {Person, Specialty, StudCard, User} from "../../../_shared/DTO";
-import {getPerson} from "../services";
+import { defineStore } from "pinia";
+import { Person, Specialty, StudCard, User } from "../../../_shared/DTO";
+import { getPerson } from "../services";
 
 export const useStudentStore = defineStore({
   id: "student",

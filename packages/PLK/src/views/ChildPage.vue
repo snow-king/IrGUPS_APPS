@@ -71,11 +71,11 @@
 
 <script setup lang="ts">
 import StudCard from "../components/student/StudCard.vue";
-import {ref} from "vue";
-import {Schedule} from "../../../_shared/DTO";
-import {useStudentStore} from "../stores/useStudentStore";
-import {useUserStore} from "../stores/useUserStore";
-import {useRoute} from "vue-router";
+import { ref } from "vue";
+import { Schedule } from "../../../_shared/DTO";
+import { useStudentStore } from "../stores/useStudentStore";
+import { useUserStore } from "../stores/useUserStore";
+import { useRoute } from "vue-router";
 
 const route = useRoute();
 const id = ref<string>("0");

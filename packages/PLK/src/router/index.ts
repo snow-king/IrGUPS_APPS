@@ -1,6 +1,6 @@
-import {useUserStore} from "../stores/useUserStore";
+import { useUserStore } from "../stores/useUserStore";
 import AuthPage from "../views/AuthPage.vue";
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import PersonPage from "../views/PersonPage.vue";
 import NotFound from "../views/NotFound.vue";
 import FamilyPage from "../views/FamilyPage.vue";

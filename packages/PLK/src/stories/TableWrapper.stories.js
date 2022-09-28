@@ -1,5 +1,5 @@
-import TableWrapper from "../../../_shared/components/TableWrapper.vue";
-import VoidTableElement from "../../../_shared/components/VoidTableElement.vue";
+import TableWrapper from "../components/TableWrapper.vue";
+import VoidTableElement from "../components/VoidTableElement.vue";
 
 export default {
   title: "UtilityComponent/TableWrapper",

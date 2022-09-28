@@ -84,9 +84,9 @@
 </template>
 
 <script setup lang="ts">
-import VK from "../../PLK/src/components/svg/VK.vue";
-import Telegram from "../../PLK/src/components/svg/TelegramSVG.vue";
-import Telephone from "../../PLK/src/components/svg/TelephoneSVG.vue";
+import VK from "./svg/VK.vue";
+import Telegram from "./svg/TelegramSVG.vue";
+import Telephone from "./svg/TelephoneSVG.vue";
 </script>
 
 <style>

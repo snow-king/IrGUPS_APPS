@@ -123,6 +123,12 @@
 <script setup lang="ts">
 import AloneLogo from "@shared/components/svg/AloneLogo.vue";
 import TheDropdown from "./TheDropdown.vue";
+import {useUserStore} from "plk-client/src/stores/useUserStore";
+import {ref} from "vue";
+const exit = () => {
+  useUserStore().exitSystem();
+};
+const menu = ref(false);
 </script>
 
 <style scoped></style>

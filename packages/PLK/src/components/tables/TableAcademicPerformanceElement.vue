@@ -30,8 +30,8 @@
 </template>
 
 <script setup lang="ts">
-import {PropType} from "vue";
-import {Mark} from "../../../../_shared/DTO";
+import { PropType } from "vue";
+import { Mark } from "../../../../_shared/DTO";
 
 const props = defineProps({
   mark: {

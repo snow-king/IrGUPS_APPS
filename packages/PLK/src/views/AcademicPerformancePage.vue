@@ -5,9 +5,7 @@
   <div class="mt-20 md:mx-10 md:p-10 bg-gray-50 rounded-md">
     <div class="flex md:px-10 px-3.5">
       <ReturnBtn />
-      <div
-        class="flex text-xl font-medium break-all pl-4 p-1 dark:text-white"
-      >
+      <div class="flex text-xl font-medium break-all pl-4 p-1 dark:text-white">
         Успеваемость обучаещего
       </div>
     </div>
@@ -38,13 +36,13 @@
 
 <script setup lang="ts">
 import ReturnBtn from "../components/student/ReturnBtn.vue";
-import Accordion from "../../../_shared/components/AccordionWrapper.vue";
-import {useStudentStore} from "../stores/useStudentStore";
-import {useUserStore} from "../stores/useUserStore";
-import {getMarks} from "../services";
-import {ref} from "vue";
-import {Mark, Semesters} from "../../../_shared/DTO";
-import TableWrapper from "../../../_shared/components/TableWrapper.vue";
+import Accordion from "../components/AccordionWrapper.vue";
+import { useStudentStore } from "../stores/useStudentStore";
+import { useUserStore } from "../stores/useUserStore";
+import { getMarks } from "../services";
+import { ref } from "vue";
+import { Mark, Semesters } from "../../../_shared/DTO";
+import TableWrapper from "../components/TableWrapper.vue";
 import TableAcademicPerformanceElement from "../components/tables/TableAcademicPerformanceElement.vue";
 
 const academicPerformanceColumns = [

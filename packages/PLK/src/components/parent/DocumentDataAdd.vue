@@ -8,9 +8,11 @@
     <DoubleGridWrapper>
       <template #first>
         <LineInput
+          :inputLength="4"
           text="Серия"
           v-model:enterElement="docData.seria"
           :require="true"
+          :input-mask="'####'"
         />
       </template>
       <template #second>
@@ -18,6 +20,7 @@
           text="Номер"
           v-model:enterElement="docData.number"
           :require="true"
+          :input-mask="'######'"
         />
       </template>
     </DoubleGridWrapper>
@@ -79,13 +82,13 @@
 <script setup lang="ts">
 import DoubleGridWrapper from "../DoubleGridWrapper.vue";
 import LineInput from "../LineInput.vue";
-import {ref} from "vue";
-import {ParentDocument} from "../../../../_shared/DTO";
-import DatepickerAdapter from "../DatepickerAdapter.vue";
+import { ref } from "vue";
+import { ParentDocument } from "../../../../_shared/DTO";
+import DatepickerAdapter from "../DateInput.vue";
 import DocDownloadField from "../DocDownloadField.vue";
-import {useUserStore} from "../../stores/useUserStore";
-import {getPersonId, uploadFile} from "../../services";
-import {Spinner} from "flowbite-vue";
+import { useUserStore } from "../../stores/useUserStore";
+import { getPersonId, uploadFile } from "../../services";
+import { Spinner } from "flowbite-vue";
 
 const uploadFlag = ref<boolean>(false);
 const docData = ref<ParentDocument>({} as ParentDocument);

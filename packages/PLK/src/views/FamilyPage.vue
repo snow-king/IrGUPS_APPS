@@ -15,10 +15,10 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+import { ref } from "vue";
 import SearchElement from "../components/SearchElement.vue";
 import TableChilds from "../components/tables/TableChilds.vue";
-import {useStudentStore} from "../stores/useStudentStore";
+import { useStudentStore } from "../stores/useStudentStore";
 
 useStudentStore().resetStudent();
 const addFlag = ref(false);

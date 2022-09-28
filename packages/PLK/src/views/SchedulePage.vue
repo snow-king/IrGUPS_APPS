@@ -39,9 +39,7 @@
         </skeleton-element>
       </div>
     </div>
-    <div
-      class="flex md:flex-row px-10 py-2 text-xl font-medium justify-center"
-    >
+    <div class="flex md:flex-row px-10 py-2 text-xl font-medium justify-center">
       <skeleton-element
         :check-element="subjects.length !== 0"
         :width="'h-8'"
@@ -63,7 +61,7 @@
     <div class="flex items-center justify-center font-medium">
       <div class="mx-1">
         <button
-          class="link link-underline link-underline-green  px-2"
+          class="link link-underline link-underline-green px-2"
           @click="parity = true"
           :class="[parity ? 'link-underline-active' : '']"
         >
@@ -97,11 +95,11 @@
 <script setup lang="ts">
 import ReturnBtn from "../components/student/ReturnBtn.vue";
 import ScheduleCardDay from "../components/student/ScheduleCardDay.vue";
-import {getSchedule} from "../services";
-import {computed, onMounted, ref} from "vue";
-import {Schedule, Subject} from "../../../_shared/DTO";
-import {useStudentStore} from "../stores/useStudentStore";
-import SkeletonElement from "../../../_shared/components/SkeletonElement.vue";
+import { getSchedule } from "../services";
+import { computed, onMounted, ref } from "vue";
+import { Schedule, Subject } from "../../../_shared/DTO";
+import { useStudentStore } from "../stores/useStudentStore";
+import SkeletonElement from "../components/SkeletonElement.vue";
 
 const group = ref<1 | 2>(1);
 const parity = ref<boolean>(false);

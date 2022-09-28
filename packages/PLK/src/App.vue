@@ -10,8 +10,7 @@
   <Footer />
 </template>
 <script setup lang="ts">
-
-import Footer from "@shared/components/PageFooter.vue";
+import Footer from "./components/TheFooter.vue";
 import NavBar from "./components/NavBar.vue";
 </script>
 <style>

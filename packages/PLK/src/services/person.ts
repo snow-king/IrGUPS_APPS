@@ -1,5 +1,5 @@
-import {Person, User} from "../../../_shared/DTO";
-import {openApi} from "../../../_shared/services/instance";
+import { Person, User } from "../../../_shared/DTO";
+import { openApi } from "../../../_shared/services/instance";
 
 export const getPersonId = async (user: User): Promise<number | string> => {
   openApi.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;
@@ -19,7 +19,7 @@ export const getPersonId = async (user: User): Promise<number | string> => {
 export const getPerson = async (
   user: User,
   id?: string
-): Promise<Person | String> => {
+): Promise<Person | string> => {
   openApi.defaults.headers.common["Authorization"] = `Bearer ${user.token}`;
   const personId = id ? id : await getPersonId(user);
   return await openApi

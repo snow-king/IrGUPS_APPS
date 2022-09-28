@@ -26,8 +26,8 @@
 </template>
 
 <script lang="ts" setup>
-import {PropType} from "vue";
-import {Dogovor} from "../../../../_shared/DTO";
+import { PropType } from "vue";
+import { Dogovor } from "../../../../_shared/DTO";
 
 const props = defineProps({
   dept: { type: Object as PropType<Dogovor>, required: true },

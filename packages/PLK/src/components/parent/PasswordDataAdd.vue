@@ -9,6 +9,7 @@
           text="Серия"
           v-model:enterElement="person.pass_ser"
           :require="true"
+          :input-mask="'####'"
         />
       </template>
       <template #second>
@@ -16,6 +17,7 @@
           text="Номер"
           v-model:enterElement="person.pass_num"
           :require="true"
+          :input-mask="'######'"
         />
       </template>
     </DoubleGridWrapper>
@@ -33,6 +35,7 @@
           text="Код подразделения:"
           v-model:enterElement="person.pass_code_subdivision"
           :require="true"
+          :input-mask="'###-###'"
         />
       </template>
     </DoubleGridWrapper>
@@ -91,8 +94,8 @@
     >
       - Не более 15 МБ;
       <br />
-      - Формат: JPG, PDF </DocDownloadField
-    >
+      - Формат: JPG, PDF
+    </DocDownloadField>
     <hr class="my-4" />
 
     <div class="flex-col">
@@ -131,15 +134,15 @@
 <script setup lang="ts">
 import DoubleGridWrapper from "../DoubleGridWrapper.vue";
 import LineInput from "../LineInput.vue";
-import {ParentDocument, Person} from "../../../../_shared/DTO";
-import {computed, PropType, ref, watch} from "vue";
-import {countries, updatePerson, uploadFile} from "../../services";
-import {useUserStore} from "../../stores/useUserStore";
+import { ParentDocument, Person } from "../../../../_shared/DTO";
+import { computed, PropType, ref, watch } from "vue";
+import { countries, updatePerson, uploadFile } from "../../services";
+import { useUserStore } from "../../stores/useUserStore";
 import DocDownloadField from "../DocDownloadField.vue";
-import DatepickerAdapter from "../DatepickerAdapter.vue";
+import DatepickerAdapter from "../DateInput.vue";
 import ContractCheckBox from "../ContractCheckBox.vue";
 import SexRadioBtn from "../SexRadioBtn.vue";
-import {Spinner} from "flowbite-vue";
+import { Spinner } from "flowbite-vue";
 
 const file = ref<File | null>();
 const props = defineProps({

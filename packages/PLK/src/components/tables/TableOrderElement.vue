@@ -37,8 +37,8 @@
 </template>
 
 <script setup lang="ts">
-import {PropType, ref} from "vue";
-import {Order} from "../../../../_shared/DTO";
+import { PropType, ref } from "vue";
+import { Order } from "../../../../_shared/DTO";
 
 const success = ref("text-primary-500");
 const warning = ref("text-amber-500");

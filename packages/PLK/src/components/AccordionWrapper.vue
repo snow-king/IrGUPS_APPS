@@ -15,7 +15,7 @@
         </div>
         <div class="py-2">
           <img
-            src="../../PLK/src/assets/icons-expand.svg "
+            src="../assets/icons-expand.svg "
             class="mr-3 h-7 transition duration-500 ease-in-out"
             v-if="ready"
             alt="UserAvatar"

@@ -84,15 +84,22 @@
       </form>
     </div>
   </div>
-  <Alert v-if="error.flag" type="danger" class="mt-10" closable @click="error.flag=false">{{error.text}}</Alert>
+  <Alert
+    v-if="error.flag"
+    type="danger"
+    class="mt-10"
+    closable
+    @click="error.flag = false"
+    >{{ error.text }}</Alert
+  >
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
-import {useRouter} from "vue-router";
-import {UserLogin} from "../../../_shared/DTO";
-import {useUserStore} from "../stores/useUserStore";
-import {Alert} from "flowbite-vue";
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+import { UserLogin } from "../../../_shared/DTO";
+import { useUserStore } from "../stores/useUserStore";
+import { Alert } from "flowbite-vue";
 
 const emit = defineEmits(["toggle"]);
 const user = ref<UserLogin>({
@@ -101,8 +108,8 @@ const user = ref<UserLogin>({
 });
 const error = ref({
   flag: false,
-  text: ''
-})
+  text: "",
+});
 const userStore = useUserStore();
 const router = useRouter();
 const openRegister = () => {
@@ -112,13 +119,11 @@ const login = async () => {
   const response = await userStore.signing(user.value);
   if (userStore.token) {
     router.push({ name: "ParentPage" });
-  }
-  else {
+  } else {
     if (typeof response === "string") {
-      error.value.text = response
-      error.value.flag = true
+      error.value.text = response;
+      error.value.flag = true;
     }
-
   }
 };
 </script>

@@ -16,11 +16,11 @@
         v-if="confirm"
         @return="confirm = !confirm"
         :user="user"
-        @confirmed=" show = true"
+        @confirmed="show = true"
       />
       <Modal :show="toggleRegister" @close="toggleRegister = false">
         <RegisterForm
-            v-if="toggleRegister"
+          v-if="toggleRegister"
           @close="toggleRegister = false"
           @created="(n) => toConfirm(n)"
         />
@@ -30,7 +30,7 @@
           type="success"
           closable
           class="static mt-10 lg:w-1/4 w-1/2"
-          @click=" show = false "
+          @click="show = false"
           v-if="show"
           >Пользователь зарегистрирован</Alert
         >
@@ -40,11 +40,11 @@
 </template>
 
 <script setup lang="ts">
-import {ref} from "vue";
+import { ref } from "vue";
 import LoginForm from "../components/LoginForm.vue";
 import RegisterForm from "../components/RegisterForm.vue";
 import Modal from "../components/ModalWrapper.vue";
-import {Alert} from "flowbite-vue";
+import { Alert } from "flowbite-vue";
 import ConfirmPhone from "../components/ConfirmPhone.vue";
 
 const toggleRegister = ref(false);
