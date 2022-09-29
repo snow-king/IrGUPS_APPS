@@ -38,7 +38,7 @@
 
 <script lang="ts" setup>
 import { watch } from "vue";
-import Cross from "./svg/CrossSVG.vue";
+import Cross from "plk-client/src/components/svg/CrossSVG.vue";
 
 const props = defineProps({
   show: Boolean,

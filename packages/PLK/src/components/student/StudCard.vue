@@ -44,7 +44,7 @@
 <script setup lang="ts">
 import { PropType } from "vue";
 import { Person, Specialty, StudCard } from "../../../../_shared/DTO";
-import SkeletonElement from "../SkeletonElement.vue";
+import SkeletonElement from "../../../../_shared/components/SkeletonElement.vue";
 import User from "../svg/UserSVG.vue";
 import StudCardElement from "./StudCardElement.vue";
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-        class="bg-gray-200 rounded-md dark:bg-gray-700 animate-pulse"
+        class="bg-gray-200 rounded-md shadow-md dark:bg-gray-700 animate-pulse"
         v-show="!checkElement"
         :class="[width, height]"
     ></div>

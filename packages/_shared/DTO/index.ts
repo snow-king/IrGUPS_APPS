@@ -13,3 +13,4 @@ export * from "./uchplan.dto";
 export * from "./marks.dto";
 export * from "./debt.dto";
 export * from "./document.dto"
+export * from "./utils.dto"

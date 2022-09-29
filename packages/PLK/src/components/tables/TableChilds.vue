@@ -19,8 +19,8 @@ import router from "../../router";
 import { searchFamily } from "../../services";
 import { useUserStore } from "../../stores/useUserStore";
 import TableChildElement from "./TableChildElement.vue";
-import VoidTableElement from "../VoidTableElement.vue";
-import TableWrapper from "../TableWrapper.vue";
+import VoidTableElement from "../../../../_shared/components/VoidTableElement.vue";
+import TableWrapper from "../../../../_shared/components/TableWrapper.vue";
 
 const emits = defineEmits(["tableUpdated"]);
 const props = defineProps({

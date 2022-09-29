@@ -99,7 +99,7 @@ import { getSchedule } from "../services";
 import { computed, onMounted, ref } from "vue";
 import { Schedule, Subject } from "../../../_shared/DTO";
 import { useStudentStore } from "../stores/useStudentStore";
-import SkeletonElement from "../components/SkeletonElement.vue";
+import SkeletonElement from "../../../_shared/components/SkeletonElement.vue";
 
 const group = ref<1 | 2>(1);
 const parity = ref<boolean>(false);

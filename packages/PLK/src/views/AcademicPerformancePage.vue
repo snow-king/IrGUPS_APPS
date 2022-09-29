@@ -42,7 +42,7 @@ import { useUserStore } from "../stores/useUserStore";
 import { getMarks } from "../services";
 import { ref } from "vue";
 import { Mark, Semesters } from "../../../_shared/DTO";
-import TableWrapper from "../components/TableWrapper.vue";
+import TableWrapper from "../../../_shared/components/TableWrapper.vue";
 import TableAcademicPerformanceElement from "../components/tables/TableAcademicPerformanceElement.vue";
 
 const academicPerformanceColumns = [

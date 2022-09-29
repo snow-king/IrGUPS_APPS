@@ -3,5 +3,7 @@ export interface DocumentDto {
     personId : number,
     name: string,
     content: string,
-    status: string
+    status: string,
+    date_create: string,
+    fullName: string
 }

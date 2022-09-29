@@ -40,7 +40,7 @@ import { delDocuments, getDocuments } from "../../services";
 import { useUserStore } from "../../stores/useUserStore";
 import { ParentDocument } from "../../../../_shared/DTO";
 import { Spinner } from "flowbite-vue";
-import Modal from "../ModalWrapper.vue";
+import Modal from "../../../../_shared/components/ModalWrapper.vue";
 import DocumentDataAdd from "./DocumentDataAdd.vue";
 
 const modalShow = ref(false);

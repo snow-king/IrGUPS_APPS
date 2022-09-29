@@ -26,9 +26,9 @@ import { ref } from "vue";
 import { Uchplan } from "../../../_shared/DTO";
 import { getUchplan } from "../services";
 import { useStudentStore } from "../stores/useStudentStore";
-import TableWrapper from "../components/TableWrapper.vue";
+import TableWrapper from "../../../_shared/components/TableWrapper.vue";
 import AcademicPlanElement from "../components/tables/AcademicPlanElement.vue";
-import VoidTableElement from "../components/VoidTableElement.vue";
+import VoidTableElement from "../../../_shared/components/VoidTableElement.vue";
 
 const uchplansColumn = ["Индекс", "Наименование дисциплины", "Часы/зеты"];
 const uchplans = ref<Array<Uchplan>>([]);

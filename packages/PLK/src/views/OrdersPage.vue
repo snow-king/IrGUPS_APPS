@@ -31,9 +31,9 @@ import { Order } from "../../../_shared/DTO";
 import { getOrders } from "../services";
 import { useUserStore } from "../stores/useUserStore";
 import { ref } from "vue";
-import TableWrapper from "../components/TableWrapper.vue";
+import TableWrapper from "../../../_shared/components/TableWrapper.vue";
 import TableOrderElement from "../components/tables/TableOrderElement.vue";
-import VoidTableElement from "../components/VoidTableElement.vue";
+import VoidTableElement from "../../../_shared/components/VoidTableElement.vue";
 
 const orderColumns = ["Номер приказа", "Дата", "Тема приказа"];
 const orders = ref<Array<Order>>([]);

@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import SkeletonElement from "../SkeletonElement.vue";
+import SkeletonElement from "../../../../_shared/components/SkeletonElement.vue";
 
 const props = defineProps({
   theme: String,

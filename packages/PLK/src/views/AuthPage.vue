@@ -43,7 +43,7 @@
 import { ref } from "vue";
 import LoginForm from "../components/LoginForm.vue";
 import RegisterForm from "../components/RegisterForm.vue";
-import Modal from "../components/ModalWrapper.vue";
+import Modal from "../../../_shared/components/ModalWrapper.vue";
 import { Alert } from "flowbite-vue";
 import ConfirmPhone from "../components/ConfirmPhone.vue";
 

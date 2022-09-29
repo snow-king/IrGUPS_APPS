@@ -1,1 +1,1 @@
-export * from "./ModalWrapper.vue";
+export * from "../../../_shared/components/ModalWrapper.vue";

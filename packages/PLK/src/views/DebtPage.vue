@@ -60,7 +60,7 @@ import { useUserStore } from "../stores/useUserStore";
 import { useStudentStore } from "../stores/useStudentStore";
 import { Book, Dogovor } from "../../../_shared/DTO";
 import TableFinancialDebtElement from "../components/tables/TableFinancialDebtElement.vue";
-import TableWrapper from "../components/TableWrapper.vue";
+import TableWrapper from "../../../_shared/components/TableWrapper.vue";
 import TableLiteraryDebtElement from "../components/tables/TableLiteraryDebtElement.vue";
 
 const finicalDebtColumn = [
