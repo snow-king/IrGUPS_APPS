@@ -8,7 +8,6 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue src --fix",
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "format": "prettier .  --write"
   },
@@ -32,13 +31,6 @@
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@histoire/plugin-vue": "^0.10.7",
-    "@storybook/addon-actions": "^6.5.12",
-    "@storybook/addon-essentials": "^6.5.12",
-    "@storybook/addon-interactions": "^6.5.12",
-    "@storybook/addon-links": "^6.5.12",
-    "@storybook/builder-vite": "^0.2.2",
-    "@storybook/testing-library": "^0.0.13",
-    "@storybook/vue3": "^6.5.12",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "@vitejs/plugin-vue": "^3.0.0",

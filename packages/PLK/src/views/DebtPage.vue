@@ -53,7 +53,7 @@
 
 <script setup lang="ts">
 import ReturnBtn from "../components/student/ReturnBtn.vue";
-import Accordion from "../components/AccordionWrapper.vue";
+import Accordion from "../../../_shared/components/AccordionWrapper.vue";
 import { ref } from "vue";
 import { financialDebt, literaryDebt } from "../services";
 import { useUserStore } from "../stores/useUserStore";

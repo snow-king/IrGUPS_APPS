@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import ReturnBtn from "../components/student/ReturnBtn.vue";
-import Accordion from "../components/AccordionWrapper.vue";
+import Accordion from "../../../_shared/components/AccordionWrapper.vue";
 import { useStudentStore } from "../stores/useStudentStore";
 import { useUserStore } from "../stores/useUserStore";
 import { getMarks } from "../services";

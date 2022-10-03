@@ -15,7 +15,7 @@
         </div>
         <div class="py-2">
           <img
-            src="../assets/icons-expand.svg "
+            src="../../PLK/src/assets/icons-expand.svg "
             class="mr-3 h-7 transition duration-500 ease-in-out"
             v-if="ready"
             alt="UserAvatar"
@@ -69,27 +69,30 @@ onMounted(() => {
 
 <style scoped>
 .slide-dropdown-enter-active {
-  animation: translateY 0.5s;
+  animation: translateY 0.6s ;
 }
 
 .slide-dropdown-leave-active {
-  animation: translateY 0.5s reverse;
+  animation: translateY 0.6s reverse ease-out;
 }
 
 @keyframes translateY {
   0% {
+    height: 0;
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-10px);
   }
-
+  10%{
+    opacity: 0;
+  }
   80% {
-    opacity: 0.8;
     transform: translateY(5px);
   }
 
   100% {
     opacity: 1;
     transform: translateY(0px);
+    height: 100%;
   }
 }
 </style>

@@ -1,4 +1,4 @@
-import AccordionWrapper from "../components/AccordionWrapper.vue";
+import AccordionWrapper from "@shared/components/AccordionWrapper.vue";
 
 export default {
   title: "UtilityComponent/AccordionWrapper",

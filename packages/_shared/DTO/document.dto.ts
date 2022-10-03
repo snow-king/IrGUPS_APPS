@@ -5,5 +5,6 @@ export interface DocumentDto {
     content: string,
     status: string,
     date_create: string,
-    fullName: string
+    fullName: string,
+    department: string
 }

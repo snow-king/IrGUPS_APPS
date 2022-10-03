@@ -10,13 +10,13 @@
       <div class="flex w-full justify-around">
         <TheSelect :list="month" text="выберите месяц" ></TheSelect>
         <TheSelect :list="years" text="выберите год"></TheSelect>
-        <TheSelect :list="[]" text="Выберите тип документа"></TheSelect>
-        <TheSelect :list="[]" text="Выберите подразделения"></TheSelect>
+        <TheSelect :list="dockType" text="Выберите тип документа"></TheSelect>
+        <TheSelect :list="departments" text="Выберите подразделения"></TheSelect>
         <TheSelect :list="status" text="Выбирите статус"></TheSelect>
         <button
             type="button"
             @click="search"
-            class="focus:outline-none text-white bg-primary-600 hover:bg-green-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 h-8"
+            class="focus:outline-none text-white bg-primary-600 hover:bg-green-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 h-8"
         >
           <Spinner v-if="searchFlag" color="green" size="5" class="mx-2.5"/>
           <div v-else>Поиск</div>
@@ -35,7 +35,8 @@
         :enumerable="true"
         :empty-slot="true"
     >
-      <void-table-element :column="4"/>
+      <TableElementDocuments v-for="(document,number) in documents" :key="document" :index="number" :document="document" />
+      <void-table-element v-if="searchFlag" :column="4"/>
     </TableWrapper>
   </div>
 </template>
@@ -50,27 +51,17 @@ import TheSelect from "../../../_shared/components/TheSelect.vue"
 import {getDocuments} from "../services";
 import {useUserStore} from "../stores/useUserStore";
 import {DocumentDto, SelectDto} from "../../../_shared/DTO";
+import TableElementDocuments from "../components/TableElementDocuments.vue";
 
 //TODO сделать сортировку.
 const route = useRoute();
 const searchFlag = ref<boolean>(true);
 const status = ref<Array<SelectDto>>([]);
 const years = ref<Array<SelectDto>>([]);
-const month = [
-  {name: "январь", value: 1},
-  {name: "Февраль", value: 2},
-  {name: "Март", value: 3},
-  {name: "Апрель", value: 4},
-  {name: "Май", value: 5},
-  {name: "Июнь", value: 6},
-  {name: "Июль", value: 7},
-  {name: "Август", value: 8},
-  {name: "Сентябрь", value: 9},
-  {name: "Октябрь", value: 10},
-  {name: "Ноябрь", value: 11},
-  {name: "Декабрь", value: 12},
-]
-const documents = ref();
+const dockType =  ref<Array<SelectDto>>([]);
+const departments =  ref<Array<SelectDto>>([]);
+const month = ref<Array<SelectDto>>([]);
+const documents = ref<Array<DocumentDto>>();
 const filters = ref({
   year: "",
   month: "",
@@ -108,10 +99,27 @@ const search = async () => {
             name: new Date(el.date_create).getFullYear(),
             value: new Date(el.date_create).getFullYear()
           })
+          month.value.push({
+            name: new Date(el.date_create).toLocaleDateString('Ru', {month: 'long'}),
+            value: new Date(el.date_create).getMonth()
+          })
+        }
+        if (!dockType.value.some(value => value.value === el.docType)  && el.docType != null){
+          dockType.value.push({
+            name: el.docType.toLowerCase(),
+            value: el.docType
+          })
+        }
+        if (!departments.value.some(value => value.value === el.department)  && el.department != null){
+          departments.value.push({
+            name: el.department.toLowerCase(),
+            value: el.department
+          })
         }
       })
     }
     searchFlag.value= false
+    return response;
   })
 
 };
