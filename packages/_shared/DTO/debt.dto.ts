@@ -10,7 +10,6 @@ export interface FinDept {
   debt_prev_sem: number;
   date_update: number;
 }
-export interface DogovorLag {}
 
 export interface Book {
   name: string;

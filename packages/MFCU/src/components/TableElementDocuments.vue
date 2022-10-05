@@ -1,4 +1,5 @@
 <template>
+  <Transition  appear name="slide-dropdown">
   <tr
       class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
   >
@@ -29,6 +30,7 @@
       </button>
     </td>
   </tr>
+    </Transition>
 </template>
 
 <script setup lang="ts">
@@ -41,5 +43,30 @@ const props = defineProps({
 </script>
 
 <style scoped>
+.slide-dropdown-enter-active {
+  animation: translateX 0.5s;
+}
 
+.slide-dropdown-leave-active {
+  animation: translateX 0.5s reverse;
+}
+
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    border: 0;
+    transform: translateX(60px);
+  }
+
+  80% {
+    transform: translateX(-1px);
+    border: 0;
+  }
+
+  100% {
+    opacity: 1;
+    border: 0;
+    transform: translateX(0px);
+  }
+}
 </style>
